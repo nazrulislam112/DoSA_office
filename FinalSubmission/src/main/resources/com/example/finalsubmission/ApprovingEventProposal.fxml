@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalsubmission.Advisor_Controller.ApprovingEventProposal ">
+   <children>
+      <TextField fx:id="EventNameTf" layoutX="101.0" layoutY="21.0" />
+      <TextField fx:id="DescriptionTF" layoutX="431.0" layoutY="21.0" />
+      <DatePicker fx:id="DateP" layoutX="94.0" layoutY="70.0" />
+      <Label layoutX="55.0" layoutY="130.0" text="Show Current Status" />
+      <Label layoutX="23.0" layoutY="25.0" text="Event Name" />
+      <Label layoutX="361.0" layoutY="25.0" text="Description" />
+      <Label layoutX="34.0" layoutY="74.0" text="Date" />
+      <TableView layoutX="200.0" layoutY="157.0" prefHeight="200.0" prefWidth="149.0">
+        <columns>
+          <TableColumn fx:id="EventNameTC" prefWidth="75.0" text="Event Name" />
+          <TableColumn fx:id="DescriptionTC" prefWidth="75.0" text="Description" />
+        </columns>
+      </TableView>
+      <Button layoutX="454.0" layoutY="145.0" mnemonicParsing="false" onAction="#SubmitB" text="Submit" />
+      <Button layoutX="33.0" layoutY="332.0" mnemonicParsing="false" onAction="#HomeB" text="HOME" />
+   </children>
+</AnchorPane>

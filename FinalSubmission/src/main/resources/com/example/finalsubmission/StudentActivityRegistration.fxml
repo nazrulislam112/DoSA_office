@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="432.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalsubmission.StudentActivityRegistration">
+   <children>
+      <TextField fx:id="Nametf" layoutX="151.0" layoutY="36.0" />
+      <Label layoutX="68.0" layoutY="41.0" text="Name" />
+      <TextField fx:id="IDTF" layoutX="151.0" layoutY="92.0" />
+      <Label layoutX="61.0" layoutY="96.0" text="ID" />
+      <ComboBox fx:id="DeptCB" layoutX="428.0" layoutY="36.0" prefWidth="150.0" />
+      <Label layoutX="347.0" layoutY="41.0" prefHeight="17.0" prefWidth="49.0" text="Dept" />
+      <DatePicker fx:id="DateP" layoutX="151.0" layoutY="130.0" />
+      <Label layoutX="333.0" layoutY="96.0" />
+      <Label layoutX="61.0" layoutY="134.0" text="Date" />
+      <ComboBox fx:id="ActivityCB" layoutX="428.0" layoutY="80.0" prefWidth="150.0" />
+      <Label layoutX="343.0" layoutY="88.0" prefHeight="17.0" prefWidth="57.0" text="Activity" />
+      <TableView layoutX="144.0" layoutY="222.0" prefHeight="192.0" prefWidth="296.0">
+        <columns>
+          <TableColumn fx:id="NameTC" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="IDTC" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="DeptTC" prefWidth="75.0" text="Dept" />
+            <TableColumn fx:id="ActivityTC" prefWidth="75.0" text="Activity" />
+        </columns>
+      </TableView>
+      <Button layoutX="414.0" layoutY="173.0" mnemonicParsing="false" onAction="#SubmitB" prefHeight="25.0" prefWidth="66.0" text="Submit" />
+      <Button layoutX="35.0" layoutY="377.0" mnemonicParsing="false" onAction="#Homeb" text="HOME" />
+   </children>
+</AnchorPane>
